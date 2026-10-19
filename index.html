@@ -1,125 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#f5f3ed" />
-  <meta name="description" content="Zhengkang Bai is a Master of Urban Planning student at Texas A&M University researching environmental psychology, tourism, restorative landscapes, urban green spaces, and human wellbeing." />
-  <meta name="author" content="Zhengkang Bai" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Zhengkang Bai | Urban Planning, Tourism & Human Wellbeing" />
-  <meta property="og:description" content="Research at the intersection of places, people and wellbeing." />
-  <title>Zhengkang Bai — Academic Homepage</title>
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <link rel="stylesheet" href="assets/styles.css" />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Zhengkang Bai",
-      "affiliation": {
-        "@type": "CollegeOrUniversity",
-        "name": "Texas A&M University"
-      },
-      "jobTitle": "Master of Urban Planning Student",
-      "email": "showmaker@tamu.edu",
-      "sameAs": [
-        "https://scholar.google.com/citations?hl=en&user=AntJ5XcAAAAJ",
-        "https://orcid.org/0009-0001-8453-8603",
-        "https://www.researchgate.net/profile/Zhengkang-Bai"
-      ],
-      "knowsAbout": ["Urban Planning", "Environmental Psychology", "Tourism", "Urban Green Space", "Restorative Landscapes", "Geographic Information Systems"]
-    }
-  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Zhengkang Bai — graduate student at Texas A&M University researching urban planning, tourism, environmental psychology and human well-being.">
+  <meta property="og:title" content="Zhengkang Bai | Academic Homepage">
+  <meta property="og:description" content="Urban Planning · Tourism · Human Wellbeing">
+  <title>Zhengkang Bai | Academic Homepage</title>
+  <!-- Based on the MIT-licensed Minimal Academic Website by Yuhui Zhang:
+       https://github.com/yuhui-zh15/Minimal-Academic-Website
+       MIT License. Copyright (c) 2025 Yuhui Zhang.
+       Permission is hereby granted, free of charge, to any person obtaining a copy
+       of this software and associated documentation files (the "Software"), to
+       deal in the Software without restriction, including without limitation the
+       rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+       sell copies of the Software, and to permit persons to whom the Software is
+       furnished to do so, subject to the following conditions:
+       The above copyright notice and this permission notice shall be included in
+       all copies or substantial portions of the Software.
+       THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+       IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+       FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+       AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+       LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+       FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+       IN THE SOFTWARE. -->
+  <style>
+    :root { --ink:#202c3b; --sub:#697888; --blue:#335e91; --line:#dce3e9; --paper:#fff; --tint:#f5f7fa; --max:880px; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:var(--paper); font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; line-height:1.7; font-size:15.5px; }
+    a { color:var(--blue); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    a:focus-visible { outline:2px solid var(--blue); outline-offset:3px; }
+    .wrap { max-width:var(--max); padding:0 22px; margin:auto; }
+    .skip {position:absolute; left:-9999px; top:0; background:var(--ink); color:white; padding:10px 16px;}
+    .skip:focus {left:10px; z-index:20}
+    .site-header { border-bottom:1px solid var(--line); background:#fff; }
+    .site-header-inner { min-height:70px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { color:#26384c; font-size:14px; font-weight:700; letter-spacing:.01em; }
+    .brand span { color:#87939f; font-weight:400; }
+    .site-nav { display:flex; align-items:center; flex-wrap:wrap; gap:18px; font-size:12.5px; }
+    .site-nav a {color:#526579}
+    .hero { padding:53px 0 32px; border-bottom:1px solid var(--line); }
+    .hero-layout { display:flex; justify-content:space-between; gap:40px; align-items:center; }
+    h1 {font-weight:650; line-height:1.12; letter-spacing:-.04em; font-size:clamp(35px,5vw,49px); margin:0 0 13px;}
+    .subtitle {font-size:17px; color:#52677f; margin:0 0 6px;}
+    .affiliation { color:var(--sub); margin:0 0 17px; font-size:14px; }
+    .social { display:flex; flex-wrap:wrap; gap:8px 18px; align-items:center; font-size:13px; }
+    .portrait {height:138px;width:138px;border:1px solid #dce4ec;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(140deg,#eaf0f6,#f8fafc);color:#657f99;font-size:48px;font-family:Georgia,serif;flex-shrink:0;}
+    main {padding:18px 0 68px}
+    section {padding:18px 0 12px; scroll-margin-top:25px}
+    h2 {font-size:21px; letter-spacing:-.02em; font-weight:650; padding-bottom:8px; border-bottom:1px solid var(--line); margin:0 0 17px;}
+    .eyebrow {color:#7c8b9b; font-size:10.5px; font-weight:750; letter-spacing:.14em; text-transform:uppercase; margin:0 0 8px;}
+    p {margin:0 0 13px;}
+    .prose {color:#415163; max-width:760px;}
+    .topics {display:grid; grid-template-columns:1fr 1fr; gap:11px 22px; list-style:none; margin:7px 0; padding:0;}
+    .topics li {position:relative; padding-left:20px; font-size:14px;}
+    .topics li:before {content:""; width:6px; height:6px; background:#6482a6; position:absolute; left:2px; top:10px; border-radius:50%;}
+    .news {padding:0;margin:0;list-style:none;}
+    .news li {display:grid;grid-template-columns:112px 1fr;gap:14px;margin:0 0 10px;font-size:13.5px;}
+    .when {color:#758598; font-size:12px; font-weight:700; letter-spacing:.015em;}
+    .sect-intro {font-size:13px; color:var(--sub); margin-top:-6px; margin-bottom:16px;}
+    .pub {display:grid; grid-template-columns:34px minmax(0,1fr); gap:17px; padding:17px 0; border-top:1px solid #edf0f4;}
+    .pub:first-of-type {border-top:0}
+    .pub-n {font-size:12px; font-weight:700; color:#9aa9ba; padding-top:3px;}
+    .pub-title {font-size:15px;font-weight:640;line-height:1.5; margin:0 0 4px;}
+    .pub-authors {font-size:13px;line-height:1.55;color:#57697b;}
+    .pub-venue {font-size:12.5px;color:#7c8b9b;margin:5px 0 0;}
+    .pub-venue a {font-weight:650}
+    .pub-subtitle {font-weight:700;font-size:12px;color:#536880;margin:26px 0 0;}
+    .project,.edu {display:grid;grid-template-columns:116px minmax(0,1fr);gap:16px; padding:12px 0;}
+    .project time,.edu time {color:#708196;font-size:12.5px;font-weight:650;}
+    .item-title {font-size:14px;font-weight:650;margin:0 0 3px}
+    .item-sub {font-size:12.8px;color:#607285;margin:0 0 5px}
+    .item-desc {font-size:13.5px;color:#526476;margin:0}
+    .scholarships {list-style:none; padding:0; margin:0 0 26px;}
+    .scholarships li {padding:12px 0;border-bottom:1px solid #ebeff3;display:flex;justify-content:space-between;gap:20px;align-items:baseline;}
+    .scholarships li:first-child{border-top:1px solid #ebeff3;}
+    .sch-name {font-weight:650;font-size:14px;line-height:1.35;display:block;}
+    .sch-meta {font-size:12px;color:var(--sub); display:block;margin-top:3px;}
+    .sch-amount {font-size:14px;font-weight:700;white-space:nowrap;color:var(--blue);}
+    .skills {font-size:13.5px;color:#516276;}
+    .skills p {margin-bottom:6px}
+    .skills b {color:#263a4e}
+    .contact {font-size:14px;}
+    footer {border-top:1px solid var(--line); padding:18px 0 35px; color:#8b98a5; font-size:11.5px;}
+    @media(max-width:680px) { .site-header-inner{padding-top:14px;padding-bottom:13px;align-items:flex-start;flex-direction:column;gap:9px}.site-nav{gap:8px 16px}.hero{padding:38px 0 28px}.hero-layout{gap:15px}.portrait{width:90px;height:90px;font-size:30px} .topics{grid-template-columns:1fr}.news li{grid-template-columns:83px 1fr}.project,.edu{grid-template-columns:90px 1fr;gap:10px}.wrap{padding:0 19px}.scholarships li{gap:12px}.sch-name{font-size:13px}.sch-amount{font-size:13px} }
+    @media(max-width:380px){.portrait{width:66px;height:66px;font-size:23px}.social{gap:5px 12px}.hero-layout{gap:9px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <div class="page-shell" id="top">
-    <header class="site-header" id="siteHeader">
-      <div class="container header-inner">
-        <a class="brand" href="#top" aria-label="Zhengkang Bai, homepage">
-          <span class="brand-symbol">Z<span class="brand-dot">.</span>B</span>
-          <span class="brand-name">ZHENGKANG BAI <span> / ACADEMIC HOMEPAGE</span></span>
-        </a>
-        <nav class="site-nav" id="siteNav" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#research">Research</a>
-          <a href="#publications">Publications</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div class="header-right">
-          <a class="nav-scholar" href="https://scholar.google.com/citations?hl=en&amp;user=AntJ5XcAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="View Google Scholar profile">Scholar <span aria-hidden="true">↗</span></a>
-          <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav"><span></span><span></span><span></span></button>
-        </div>
-      </div>
-    </header>
-    <main id="main">
-      <section class="hero section-pad" aria-labelledby="heroTitle">
-        <div class="container hero-grid">
-          <div class="hero-content">
-            <div class="eyebrow"><span class="eyebrow-dot"></span> TEXAS A&amp;M UNIVERSITY <span class="eyebrow-separator">/</span> COLLEGE OF ARCHITECTURE</div>
-            <h1 id="heroTitle">Zhengkang<br /><em>Bai<span class="hero-period">.</span></em></h1>
-            <p class="hero-role">Urban Planning <span class="role-star">✳</span> Tourism Studies <span class="role-star">✳</span> Human Wellbeing</p>
-            <p class="hero-description">I study how the places we plan, protect, and experience shape human health, emotions, and quality of life—bridging environmental psychology, tourism research, and spatial analysis.</p>
-            <div class="hero-buttons">
-              <a href="#publications" class="button button-dark">Explore my publications <span>↗</span></a>
-              <a href="cv/Zhengkang_Bai_CV.pdf" class="button button-light" download>Download CV <span>↓</span></a>
-            </div>
-            <div class="hero-details"><div><span class="small-label">CURRENTLY</span><strong>Master of Urban Planning</strong></div><div class="hero-details-divider"></div><div><span class="small-label">BASED IN</span><strong>College Station, Texas</strong></div></div>
-          </div>
-          <div class="hero-art" aria-label="Abstract topographic illustration representing landscapes and places" role="img">
-            <svg class="art-lines" viewBox="0 0 620 660" fill="none" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
-              <g stroke="#abc7ad" stroke-width="1.3" opacity="0.43">
-                <path d="M-113 327C11 197 81 282 153 165c79-125 182-117 286-49 139 89 164 9 280-102"/><path d="M-108 356C14 231 89 313 169 201c78-113 172-106 275-40 130 83 162 12 275-94"/><path d="M-108 385C14 265 99 341 184 238c78-101 163-95 265-33 121 78 157 16 270-86"/><path d="M-113 413C14 301 111 372 198 274c77-88 155-84 257-24 110 72 155 20 264-78"/><path d="M-124 445C17 337 124 405 211 313c76-79 152-76 249-20 102 62 153 23 265-75"/><path d="M-130 480C23 376 141 437 225 347c76-76 148-67 241-16 100 55 152 31 268-69"/><path d="M-131 512C35 415 156 469 243 382c80-80 148-55 235-10 102 52 156 35 271-70"/><path d="M-148 545C38 460 180 511 261 424c87-85 157-41 239-1 108 53 158 39 270-71"/><path d="M-158 587C46 504 200 543 277 464c81-82 158-32 239 1 107 44 153 36 268-69"/><path d="M-168 626C50 551 217 585 293 498c80-89 162-20 247 8 103 35 144 26 262-80"/>
-              </g>
-              <circle cx="362" cy="258" r="176" stroke="#d9e4d6" stroke-width=".75" stroke-dasharray="3 9" opacity=".48"/>
-              <path d="M109 70h84M151 28v84M453 514h83M494 472v84" stroke="#9ab8a4" stroke-width="1" opacity=".7"/>
-            </svg>
-            <div class="art-number">01 — 03</div>
-            <div class="art-orb"><div class="orb-shadow"></div><div class="orb-line orb-line-one"></div><div class="orb-line orb-line-two"></div><div class="orb-line orb-line-three"></div><div class="orb-caption">PEOPLE<br />&amp; PLACE</div></div>
-            <div class="art-wordmark">Landscapes<br /><i>of wellbeing.</i></div>
-            <div class="art-footer"><span>RESEARCH NOTEBOOK <i>↗</i></span><span>30° 37′ N / 96° 20′ W</span></div>
-          </div>
-        </div>
-      </section>
-      <div class="marquee-strip" aria-label="Research interests"><div class="container marquee-inner"><span>ENVIRONMENTAL PSYCHOLOGY</span><b>✳</b><span>SPATIAL ANALYSIS</span><b>✳</b><span>NATURE &amp; WELLBEING</span><b>✳</b><span>TOURISM RESEARCH</span></div></div>
-      <section class="about section-pad" id="about" aria-labelledby="aboutTitle">
-        <div class="container section-two-col">
-          <div class="section-side"><span class="section-index">01 / INTRODUCTION</span><h2 id="aboutTitle" class="section-heading">A little<br /><em>about me.</em></h2></div>
-          <div class="about-copy"><p class="big-copy">I am a Master of Urban Planning student at <strong>Texas A&amp;M University</strong>, with a background in <strong>tourism management</strong> from Central South University of Forestry and Technology.</p><p>My work examines how natural and built environments influence psychological restoration and subjective wellbeing, and what these relationships mean for planning healthier, more inclusive places.</p><p>I combine empirical approaches—including psychophysiological measurements, surveys, GIS, spatial analysis, and computational methods—to connect experiences of places with evidence that can inform planning and management.</p><div class="about-links"><a href="https://orcid.org/0009-0001-8453-8603" target="_blank" rel="noopener noreferrer">ORCID <span>↗</span></a><a href="https://scholar.google.com/citations?hl=en&amp;user=AntJ5XcAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar <span>↗</span></a><a href="mailto:showmaker@tamu.edu">Email me <span>↗</span></a></div></div>
-        </div>
-      </section>
-      <section class="research section-pad" id="research" aria-labelledby="researchTitle"><div class="container"><div class="section-top"><div><span class="section-index">02 / RESEARCH INTERESTS</span><h2 id="researchTitle" class="section-heading">Questions that<br /><em>drive my work.</em></h2></div><p class="section-intro">Connecting human experiences with the environments and systems that shape them.</p></div>
-        <div class="research-grid">
-          <article class="research-card"><div class="research-card-top"><span>01</span><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M32 53V17M32 38 17 25M32 32l15-14M19 53h26M32 8C17 14 9 25 9 37c0 12 11 16 23 16s23-4 23-16C55 25 46 14 32 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><h3>Nature, restoration<br />&amp; mental health</h3><p>How forests, soundscapes, and extraordinary landscapes support emotional recovery, psychological restoration, and human wellbeing.</p><span class="tag">Environmental psychology</span></article>
-          <article class="research-card"><div class="research-card-top"><span>02</span><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M8 53h48M14 53V27h12v26M26 53V13h13v40M39 53V31h11v22M19 33v5m0 6v3M32 20v7m0 7v7M45 37v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Healthy cities<br />&amp; green spaces</h3><p>How planning, access to green space, and everyday urban experiences relate to quality of life and the design of healthier places.</p><span class="tag">Urban planning</span></article>
-          <article class="research-card"><div class="research-card-top"><span>03</span><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M32 56s18-18 18-32a18 18 0 1 0-36 0c0 14 18 32 18 32Z" stroke="currentColor" stroke-width="1.5"/><circle cx="32" cy="24" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M7 56c5-7 10-9 16-6m18 0c6-3 11-1 16 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><h3>Tourism, place<br />&amp; spatial data</h3><p>Exploring visitor experiences, sustainable tourism environments, and the role of GIS and data-driven analysis in place-based decision-making.</p><span class="tag">Tourism &amp; GIS</span></article>
-        </div>
-      </div></section>
-      <section class="featured section-pad" aria-labelledby="featuredTitle"><div class="container featured-grid"><div class="featured-left"><span class="section-index light-index">A CLOSER LOOK</span><h2 id="featuredTitle">From natural beauty<br />to <em>human benefit.</em></h2><p>My published work investigates the restorative power of natural settings—from awe-inspiring landscapes to everyday urban forests and the sounds that make them distinctive.</p><a href="#publications" class="featured-link">Read the research <span aria-hidden="true">↗</span></a></div><div class="featured-right"><div class="featured-stat"><span class="featured-big">2024—26</span><span>Publication years represented</span></div><div class="featured-rule"></div><div class="featured-stat"><span class="featured-big">6 <small>articles</small></span><span>Peer-reviewed journal publications listed below</span></div><div class="featured-rule"></div><p class="featured-note">Across environmental management, psychology, urban nature and leisure research.</p></div></div></section>
-      <section class="publications section-pad" id="publications" aria-labelledby="publicationsTitle"><div class="container"><div class="section-top"><div><span class="section-index">03 / SCHOLARLY WORK</span><h2 id="publicationsTitle" class="section-heading">Selected<br /><em>publications.</em></h2></div><div class="pub-aside"><p>Peer-reviewed journal articles, with links to the publisher or DOI.</p><a href="https://scholar.google.com/citations?hl=en&amp;user=AntJ5XcAAAAJ" target="_blank" rel="noopener noreferrer">Full list on Google Scholar <span>↗</span></a></div></div>
-        <div class="pub-toolbar"><p><span id="pubCount">6</span> journal articles</p><div class="filter-group" role="group" aria-label="Filter publications by year"><button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button><button type="button" class="filter-btn" data-filter="2026" aria-pressed="false">2026</button><button type="button" class="filter-btn" data-filter="2025" aria-pressed="false">2025</button><button type="button" class="filter-btn" data-filter="2024" aria-pressed="false">2024</button></div></div>
-        <div class="publication-list" id="publicationList">
-          <article class="publication" data-year="2026"><div class="pub-year">2026 <span>01</span></div><div class="pub-main"><div class="pub-metadata"><span class="pub-journal">Humanities and Social Sciences Communications</span><span class="pub-type">Research article</span></div><h3>Promoting subjective well-being through pet leisure: motivation, participation, and place attachment in urban spaces</h3><p class="pub-authors">Jin Zeng, <strong>Zhengkang Bai</strong>, Lianghong Li, Taihua Guan &amp; LongXuan Li</p><p class="pub-summary">Examines how pet leisure, place attachment, and participation contribute to subjective wellbeing and supportive urban environments.</p></div><a class="pub-link" href="https://doi.org/10.1057/s41599-026-09351-w" target="_blank" rel="noopener noreferrer" aria-label="Open DOI for pet leisure study">DOI <span>↗</span></a></article>
-          <article class="publication" data-year="2026"><div class="pub-year">2026 <span>02</span></div><div class="pub-main"><div class="pub-metadata"><span class="pub-journal">BMC Psychology</span><span class="pub-type">Research article</span></div><h3>A cross-modal framework for evaluating the mental health benefits of urban and natural landscapes in sustainable cities: an empirical study based on undergraduate students</h3><p class="pub-authors"><strong>Zhengkang Bai</strong>, Ziqi Zheng, Shuangquan Zhang, Xili Han &amp; Zhe Tao</p><p class="pub-summary">Develops an integrated approach to evaluate how urban-to-natural landscape settings relate to mental health and psychological restoration.</p></div><a class="pub-link" href="https://doi.org/10.1186/s40359-026-04950-3" target="_blank" rel="noopener noreferrer" aria-label="Open DOI for cross-modal landscape study">DOI <span>↗</span></a></article>
-          <article class="publication" data-year="2025"><div class="pub-year">2025 <span>03</span></div><div class="pub-main"><div class="pub-metadata"><span class="pub-journal">Scientific Reports</span><span class="pub-type">Research article</span></div><h3>Nature perception and positive emotions in urban forest parks enhance subjective well-being</h3><p class="pub-authors"><strong>Zhengkang Bai</strong>, Shuangquan Zhang, Hui He &amp; Mei Xu</p><p class="pub-summary">Studies how environmental perception, emotional responses, and restorative experience contribute to wellbeing in urban forest parks.</p></div><a class="pub-link" href="https://doi.org/10.1038/s41598-025-15612-6" target="_blank" rel="noopener noreferrer" aria-label="Open DOI for urban forest park study">DOI <span>↗</span></a></article>
-          <article class="publication" data-year="2025"><div class="pub-year">2025 <span>04</span></div><div class="pub-main"><div class="pub-metadata"><span class="pub-journal">Ecological Frontiers</span><span class="pub-type">Research article</span></div><h3>The effects of landscape features and individual attributes on the psychophysiological responses of young visitors</h3><p class="pub-authors">Yan Tang, <strong>Zhengkang Bai</strong>, Shuangquan Zhang, Hui He &amp; Yefeng Xie</p><p class="pub-summary">Investigates the restorative effects of different forest landscape configurations and individual visitor attributes.</p></div><a class="pub-link" href="https://doi.org/10.1016/j.ecofro.2025.06.016" target="_blank" rel="noopener noreferrer" aria-label="Open DOI for landscape features study">DOI <span>↗</span></a></article>
-          <article class="publication" data-year="2025"><div class="pub-year">2025 <span>05</span></div><div class="pub-main"><div class="pub-metadata"><span class="pub-journal">Journal of Environmental Management</span><span class="pub-type">Research article</span></div><h3>Extraordinary nature and human recovery: Psychological and physiological perspectives</h3><p class="pub-authors"><strong>Zhengkang Bai</strong>, Shuangquan Zhang &amp; Hui He</p><p class="pub-summary">Explores the psychophysiological benefits of extraordinary natural landscapes and the potential role of awe in recovery.</p></div><a class="pub-link" href="https://doi.org/10.1016/j.jenvman.2024.123661" target="_blank" rel="noopener noreferrer" aria-label="Open DOI for extraordinary nature study">DOI <span>↗</span></a></article>
-          <article class="publication" data-year="2024"><div class="pub-year">2024 <span>06</span></div><div class="pub-main"><div class="pub-metadata"><span class="pub-journal">Scientific Reports</span><span class="pub-type">Research article</span></div><h3>Effects of different natural soundscapes on human psychophysiology in national forest park</h3><p class="pub-authors"><strong>Zhengkang Bai</strong> &amp; Shuangquan Zhang</p><p class="pub-summary">Compares psychophysiological responses to single-element and combined natural soundscapes in a national forest park.</p></div><a class="pub-link" href="https://doi.org/10.1038/s41598-024-67812-1" target="_blank" rel="noopener noreferrer" aria-label="Open DOI for natural soundscapes study">DOI <span>↗</span></a></article>
-        </div>
-        <div class="working-paper"><span class="working-kicker">WORK IN PROGRESS</span><div><h3>From Green to Gold: Monetizing and Segmenting the Psychological Value of Urban Parks in China</h3><p><strong>Zhengkang Bai</strong>, Shuangquan Zhang, Bin Jiang, Fen Luo &amp; Bing Pan <span class="working-dot">•</span> Manuscript under review (status per CV)</p></div><span class="working-icon">↗</span></div>
-      </div></section>
-      <section class="experience section-pad" id="experience" aria-labelledby="experienceTitle"><div class="container"><div class="section-top"><div><span class="section-index">04 / BACKGROUND</span><h2 id="experienceTitle" class="section-heading">My academic<br /><em>journey.</em></h2></div><p class="section-intro">A foundation in tourism studies, now extending into evidence-based urban planning.</p></div>
-        <div class="experience-layout"><div class="education-panel"><h3 class="panel-title">Education <span>↗</span></h3><div class="timeline-item"><span class="time-date">2026—2028 <small>expected</small></span><h4>Texas A&amp;M University</h4><p>Master of Urban Planning</p><span>College of Architecture · United States</span></div><div class="timeline-item"><span class="time-date">2022—2026</span><h4>Central South University of Forestry and Technology</h4><p>Bachelor of Management in Tourism Management</p><span>Changsha, China</span></div><div class="education-note">Rooted in tourism and human-environment research, with an expanding focus on urban health, spatial equity, and planning.</div></div>
-          <div class="experience-panel"><h3 class="panel-title">Research &amp; experience <span>↗</span></h3><div class="work-item"><span>2025—2028</span><div><h4>Green Space Value &amp; Multi-Source Data</h4><p>Research participation in a National Natural Science Foundation of China–supported project on green space valuation, spatial data, and visitor research.</p></div></div><div class="work-item"><span>2025</span><div><h4>Machine Learning for Meteorological Forecast Correction</h4><p>Contributed to data processing and forecasting-related workflows with Python, pandas, scikit-learn, random forests and support vector machines.</p></div></div><div class="work-item"><span>2022—2024</span><div><h4>Research Assistant · Forest Tourism</h4><p>Engineering Research Center for Forest Tourism, National Forestry and Grassland Administration. Worked with ecological and geographic data in forest tourism research.</p></div></div></div>
-        </div>
-        <div class="skills-row"><div><span class="section-index">TOOLS &amp; METHODS</span><p>GIS / ArcGIS <span>·</span> Python <span>·</span> SPSS <span>·</span> Origin <span>·</span> MAXQDA <span>·</span> LaTeX <span>·</span> Survey research <span>·</span> Psychophysiological analysis</p></div><div class="award-side"><span class="section-index">RECOGNITION</span><p>University scholarships (2023, 2024) · Student leadership &amp; research-related awards</p></div></div>
-      </div></section>
-      <section class="contact section-pad" id="contact" aria-labelledby="contactTitle"><div class="container contact-inner"><div><span class="section-index light-index">05 / LET'S CONNECT</span><h2 id="contactTitle">Good research starts<br />with a <em>conversation.</em></h2><p>I welcome conversations about research, potential collaborations, and ideas at the intersection of urban planning, tourism, environmental psychology, and wellbeing.</p><a class="contact-email" href="mailto:showmaker@tamu.edu">showmaker@tamu.edu <span>↗</span></a></div><div class="contact-links"><div class="contact-monogram">Z<span>.</span>B</div><a href="https://scholar.google.com/citations?hl=en&amp;user=AntJ5XcAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar <span>↗</span></a><a href="https://orcid.org/0009-0001-8453-8603" target="_blank" rel="noopener noreferrer">ORCID <span>↗</span></a><a href="https://www.researchgate.net/profile/Zhengkang-Bai" target="_blank" rel="noopener noreferrer">ResearchGate <span>↗</span></a><a href="cv/Zhengkang_Bai_CV.pdf" download>Curriculum Vitae <span>↓</span></a></div></div></section>
-    </main>
-    <footer class="site-footer"><div class="container footer-inner"><span>© <span id="year">2026</span> Zhengkang Bai. All rights reserved.</span><span>Designed for curiosity, built for clarity.</span><a href="#top">Back to top ↑</a></div></footer>
+<body id="top">
+<a class="skip" href="#about">Skip to main content</a>
+<header class="site-header"><div class="wrap site-header-inner">
+  <a class="brand" href="#top">Zhengkang Bai <span>/ Academic Homepage</span></a>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#awards">Honors</a><a href="#contact">Contact</a>
+  </nav>
+</div></header>
+<div class="hero"><div class="wrap hero-layout">
+  <div><p class="eyebrow">Texas A&amp;M University · College of Architecture</p><h1>Zhengkang Bai</h1>
+    <p class="subtitle">Urban Planning · Tourism Studies · Human Wellbeing</p>
+    <p class="affiliation">Master of Urban Planning Student · College Station, Texas</p>
+    <div class="social">
+      <a href="https://scholar.google.com/citations?hl=en&amp;user=AntJ5XcAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+      <a href="https://orcid.org/0009-0001-8453-8603" target="_blank" rel="noopener noreferrer">ORCID ↗</a>
+      <a href="mailto:showmaker@tamu.edu">Email ↗</a>
+    </div>
   </div>
-  <script src="assets/script.js" defer></script>
+  <div class="portrait" role="img" aria-label="Initials ZB; profile photograph to be added">ZB</div>
+</div></div>
+<main class="wrap">
+<section id="about"><h2>About me</h2>
+  <p class="eyebrow">Understanding how environments shape human wellbeing.</p>
+  <p class="prose">I am a graduate student in <strong>Urban Planning at Texas A&amp;M University</strong>, with an interdisciplinary background in tourism management and environmental psychology. My research examines the relationship between people and places, particularly the effects of natural environments, urban green space, and leisure experiences on psychological restoration and quality of life.</p>
+  <p class="prose">I use spatial analysis, quantitative methods, and empirical research to study how planning decisions can support healthier, more inclusive communities.</p>
+</section>
+<section id="research"><h2>Research Interests</h2><p class="eyebrow">Areas of inquiry</p>
+  <ul class="topics"><li>Environmental psychology &amp; restorative landscapes</li><li>Urban planning, green space &amp; public health</li><li>Tourism, leisure &amp; subjective wellbeing</li><li>GIS, spatial analysis &amp; quantitative methods</li></ul>
+</section>
+<section id="news"><h2>Recent News</h2><p class="eyebrow">2025–2026</p>
+  <ul class="news">
+    <li><span class="when">OCT 2026</span><span>Our paper on pet leisure, place attachment and subjective wellbeing was published in <em>Humanities and Social Sciences Communications</em>.</span></li>
+    <li><span class="when">JUN 2026</span><span>Our cross-modal study of restorative landscapes was published in <em>BMC Psychology</em>.</span></li>
+    <li><span class="when">AUG 2025</span><span>Our study of nature perception and wellbeing in urban forest parks appeared in <em>Scientific Reports</em>.</span></li>
+  </ul>
+</section>
+<section id="publications"><h2>Publications</h2><p class="sect-intro">Peer-reviewed published articles. My name is shown in <strong>bold</strong>. <a href="https://scholar.google.com/citations?hl=en&amp;user=AntJ5XcAAAAJ" target="_blank" rel="noopener noreferrer">View Google Scholar ↗</a> for updates.</p>
+  <article class="pub"><span class="pub-n">01</span><div><p class="pub-title"><a href="https://doi.org/10.1057/s41599-026-09351-w">Promoting subjective well-being through pet leisure: motivation, participation, and place attachment in urban spaces</a></p><div class="pub-authors">Jin Zeng, <strong>Zhengkang Bai</strong>, Lianghong Li, Taihua Guan, LongXuan Li</div><p class="pub-venue"><em>Humanities and Social Sciences Communications</em> · 2026 / <a href="https://doi.org/10.1057/s41599-026-09351-w">DOI ↗</a></p></div></article>
+  <article class="pub"><span class="pub-n">02</span><div><p class="pub-title"><a href="https://doi.org/10.1186/s40359-026-04950-3">A cross-modal framework for evaluating the mental health benefits of urban and natural landscapes in sustainable cities: an empirical study based on undergraduate students</a></p><div class="pub-authors"><strong>Zhengkang Bai</strong>, Ziqi Zheng, Shuangquan Zhang, Xili Han, Zhe Tao</div><p class="pub-venue"><em>BMC Psychology</em> · 2026 / <a href="https://doi.org/10.1186/s40359-026-04950-3">DOI ↗</a></p></div></article>
+  <article class="pub"><span class="pub-n">03</span><div><p class="pub-title"><a href="https://doi.org/10.1038/s41598-025-15612-6">Nature perception and positive emotions in urban forest parks enhance subjective well-being</a></p><div class="pub-authors"><strong>Zhengkang Bai</strong>, Shuangquan Zhang, Hui He, Mei Xu</div><p class="pub-venue"><em>Scientific Reports</em> · 2025 / <a href="https://doi.org/10.1038/s41598-025-15612-6">DOI ↗</a></p></div></article>
+  <article class="pub"><span class="pub-n">04</span><div><p class="pub-title"><a href="https://doi.org/10.1016/j.ecofro.2025.06.016">The Effects of Landscape Features and Individual Attributes on the Psychophysiological Responses of Young Visitors</a></p><div class="pub-authors">Yan Tang, <strong>Zhengkang Bai</strong>, Shuangquan Zhang</div><p class="pub-venue"><em>Ecological Frontiers</em> · 2025 / <a href="https://doi.org/10.1016/j.ecofro.2025.06.016">DOI ↗</a></p></div></article>
+  <article class="pub"><span class="pub-n">05</span><div><p class="pub-title"><a href="https://doi.org/10.1016/j.jenvman.2024.123661">Extraordinary nature and human recovery: Psychological and physiological perspectives</a></p><div class="pub-authors"><strong>Zhengkang Bai</strong>, Shuangquan Zhang, Hui He</div><p class="pub-venue"><em>Journal of Environmental Management</em> · 2025 / <a href="https://doi.org/10.1016/j.jenvman.2024.123661">DOI ↗</a></p></div></article>
+  <article class="pub"><span class="pub-n">06</span><div><p class="pub-title"><a href="https://doi.org/10.1038/s41598-024-67812-1">Effects of different natural soundscapes on human psychophysiology in national forest park</a></p><div class="pub-authors"><strong>Zhengkang Bai</strong>, Shuangquan Zhang</div><p class="pub-venue"><em>Scientific Reports</em> · 2024 / <a href="https://doi.org/10.1038/s41598-024-67812-1">DOI ↗</a></p></div></article>
+  <p class="pub-subtitle">Under Review</p><article class="pub"><span class="pub-n">07</span><div><p class="pub-title">From Green to Gold: Monetizing and Segmenting the Psychological Value of Urban Parks in China</p><div class="pub-authors"><strong>Zhengkang Bai</strong>, Shuangquan Zhang, Bin Jiang, Fen Luo, Bing Pan</div><p class="pub-venue">Manuscript under review · <em>Cities</em></p></div></article>
+</section>
+<section id="projects"><h2>Research Experience</h2><p class="eyebrow">Selected projects</p>
+  <div class="project"><time>2025–2028</time><div><p class="item-title">Monetization of Green Space Value with Multi-source Data</p><p class="item-sub">Research team member · National Natural Science Foundation of China (Grant 32571813)</p><p class="item-desc">Combining questionnaires, geographic information and spatial visualization to explore the value of green environments and nature-based tourism.</p></div></div>
+  <div class="project"><time>2025</time><div><p class="item-title">Machine Learning for Meteorological Nowcasting</p><p class="item-sub">Research contributor · Hunan Provincial Natural Science Foundation (Grant 2025JJ80278)</p><p class="item-desc">Processed meteorological observations with Python, pandas and scikit-learn, contributing to machine-learning-based forecasting correction.</p></div></div>
+  <div class="project"><time>2022–2024</time><div><p class="item-title">Forest Tourism Research &amp; Planning</p><p class="item-sub">Research Assistant · Engineering Research Center for Forest Tourism</p><p class="item-desc">Analyzed ecological and spatial information from forest tourism areas and supported research activities related to tourism planning and visitor experiences.</p></div></div>
+</section>
+<section id="education"><h2>Education</h2><p class="eyebrow">Academic background</p>
+  <div class="edu"><time>2026–2028</time><div><p class="item-title">Texas A&amp;M University</p><p class="item-sub">Master of Urban Planning · Expected May 2028</p></div></div>
+  <div class="edu"><time>2022–2026</time><div><p class="item-title">Central South University of Forestry and Technology</p><p class="item-sub">Bachelor of Management in Tourism Management</p></div></div>
+</section>
+<section id="awards"><h2>Honors &amp; Skills</h2><p class="eyebrow">Scholarships</p>
+  <ul class="scholarships">
+    <li><div><span class="sch-name">TAMU College of Architecture Top-Off Scholarship</span><span class="sch-meta">Texas A&amp;M University</span></div><span class="sch-amount">US$15,000</span></li>
+    <li><div><span class="sch-name">TAMU HMGT Scholarship</span><span class="sch-meta">Texas A&amp;M University · Hospitality, Hotel Management and Tourism</span></div><span class="sch-amount">US$2,000</span></li>
+    <li><div><span class="sch-name">CSUFT Research and Innovation Scholarship</span><span class="sch-meta">Central South University of Forestry and Technology · 1 of 300 students</span></div><span class="sch-amount">RMB 3,000</span></li>
+    <li><div><span class="sch-name">Second-class Scholarship</span><span class="sch-meta">Central South University of Forestry and Technology · Top 3% · 2024</span></div><span class="sch-amount">RMB 2,000</span></li>
+    <li><div><span class="sch-name">Third-class Scholarship</span><span class="sch-meta">Central South University of Forestry and Technology · Top 10% · 2023</span></div><span class="sch-amount">RMB 1,000</span></li>
+  </ul>
+  <p class="eyebrow">Skills</p>
+  <div class="skills"><p><b>Methods &amp; tools:</b> Python, ArcGIS, SPSS, Origin, MAXQDA, LaTeX</p><p><b>Languages:</b> Mandarin Chinese, English</p></div>
+</section>
+<section id="contact"><h2>Contact</h2><p class="contact">For academic correspondence, please email <a href="mailto:showmaker@tamu.edu">showmaker@tamu.edu</a>.</p><p class="contact">Texas A&amp;M University · College of Architecture · College Station, Texas</p></section>
+</main>
+<footer><div class="wrap">© 2026 Zhengkang Bai · Adapted from <a href="https://github.com/yuhui-zh15/Minimal-Academic-Website" target="_blank" rel="noopener noreferrer">Minimal Academic Website</a> (MIT License).</div></footer>
 </body>
 </html>
